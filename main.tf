@@ -89,7 +89,7 @@ module "pipeline" {
 module "pipeline" {
   source = "./modules/pipeline"
 
-  project_name = "ubaid-project-v3"
+  project_name = "ubaid-project-v1"
   artifact_bucket_name  = "ubaid-artifacts-12345"
   deploy_bucket_name    = "ubaid-deploy-12345"
 
