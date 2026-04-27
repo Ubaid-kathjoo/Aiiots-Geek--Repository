@@ -86,7 +86,14 @@ module "pipeline" {
   project_name          = "ubaid-project"
   artifact_bucket_name  = "ubaid-artifacts-12345"
   deploy_bucket_name    = "ubaid-deploy-12345"
+module "pipeline" {
+  source = "./modules/pipeline"
+
+  project_name          = "ubaid-project"
+  artifact_bucket_name  = "ubaid-artifacts-12345"
+  deploy_bucket_name    = "ubaid-deploy-12345"
 
   github_owner = "Ubaid-kathjoo"
   github_repo  = "Aiiots-Geek--Repository"
   github_token = var.github_token
+}
