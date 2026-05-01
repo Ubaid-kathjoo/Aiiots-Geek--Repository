@@ -10,7 +10,7 @@ variable "env" {
 variable "my_project" {
   default = "demo-terraform"
 }
-variable "github_token" {
-  description = "GitHub personal access token"
+ variable "github_token" {
+  description = "GitHub token for pipeline"
   type        = string
 }
