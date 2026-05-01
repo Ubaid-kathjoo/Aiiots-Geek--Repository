@@ -81,7 +81,7 @@ module "iam_prod" {
 }
 
 module "pipeline" {
-  source = "./modules/pipeline"
+  source = "./module/pipeline"
 
   project_name          = "ubaid-project"
   artifact_bucket_name  = "ubaid-artifacts-12345"
